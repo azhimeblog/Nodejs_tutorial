@@ -41,7 +41,7 @@ router.post('/add', [
                     if (err) {
                         res.send(err);
                     } else {
-                        req.flash("error", "บันทึกบทความเรียบร้อยแล้ว");
+                        req.flash("success", "บันทึกบทความเรียบร้อยแล้ว");
                         res.location('/blog/add');
                         res.redirect('/blog/add');
                     }
